@@ -172,6 +172,7 @@
             this.RegProPicButton.TabIndex = 22;
             this.RegProPicButton.Text = "Upload Image";
             this.RegProPicButton.UseVisualStyleBackColor = true;
+            this.RegProPicButton.Click += new System.EventHandler(this.RegProPicButton_Click);
             // 
             // RegisterForm
             // 
