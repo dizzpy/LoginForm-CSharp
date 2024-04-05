@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoginForm_CSharp.Views;
 using MySqlConnector;
 
 
@@ -68,7 +69,10 @@ namespace LoginForm_CSharp
 
                     commandDatabase.CommandTimeout = 60;
                     commandDatabase.ExecuteNonQuery();
-                    MessageBox.Show("Account Created Successfully");
+                    MessageBox.Show("Account Created Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    DashboardForm dashboardForm = new DashboardForm();
+                    dashboardForm.Show();
                 }
             }
             catch(Exception ex)
