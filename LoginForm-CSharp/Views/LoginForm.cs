@@ -43,7 +43,8 @@ namespace LoginForm_CSharp
                 {
                     MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    DashboardForm dashboardForm = new DashboardForm();
+                    string LoggedUserName = LogUsernameText.Text;
+                    DashboardForm dashboardForm = new DashboardForm(LoggedUserName);
                     dashboardForm.Show();
                 }
                 else

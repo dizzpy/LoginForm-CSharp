@@ -71,8 +71,9 @@ namespace LoginForm_CSharp
                     commandDatabase.ExecuteNonQuery();
                     MessageBox.Show("Account Created Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    DashboardForm dashboardForm = new DashboardForm();
-                    dashboardForm.Show();
+                    string LoggedUserName = RegUsernameText.Text;
+                    DashboardForm dashboardForm = new DashboardForm(LoggedUserName);
+                    dashboardForm.Show(); ;
                 }
             }
             catch(Exception ex)
