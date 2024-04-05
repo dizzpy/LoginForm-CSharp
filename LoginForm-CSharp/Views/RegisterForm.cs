@@ -17,14 +17,16 @@ namespace LoginForm_CSharp
             InitializeComponent();
         }
 
-        private void RegisterForm_Load(object sender, EventArgs e)
+        private void RegisterButton_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void GotoToLoginButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
         }
     }
 }

@@ -53,6 +53,7 @@
             this.GotoToLoginButton.TabIndex = 13;
             this.GotoToLoginButton.Text = "Back to Login";
             this.GotoToLoginButton.UseVisualStyleBackColor = true;
+            this.GotoToLoginButton.Click += new System.EventHandler(this.GotoToLoginButton_Click);
             // 
             // RegisterButton
             // 
@@ -62,6 +63,7 @@
             this.RegisterButton.TabIndex = 12;
             this.RegisterButton.Text = "Register";
             this.RegisterButton.UseVisualStyleBackColor = true;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // label3
             // 
@@ -87,7 +89,6 @@
             this.label2.Size = new System.Drawing.Size(79, 23);
             this.label2.TabIndex = 9;
             this.label2.Text = "First Name";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // RegFirtsNameText
             // 
@@ -196,8 +197,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
-            this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
