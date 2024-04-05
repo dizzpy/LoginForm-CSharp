@@ -138,6 +138,7 @@
             this.LogoutButton.TabIndex = 9;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // DashboardForm
             // 
